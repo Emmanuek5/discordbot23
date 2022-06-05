@@ -70,5 +70,5 @@ const app = express();
 
 app.listen(() => console.log("Server started"));
 
-app.use('/ping', (req, res) => {
+app.get('/', (req, res) => {
   res.send(new Date());})
