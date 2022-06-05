@@ -30,6 +30,11 @@ const PREFIX = '!'
 client.on('message', message =>{
 
 
+    if (message.content == "Hello") {
+
+      message.send("Hello");
+    } 
+
   
     let args = message.content.substring(PREFIX.length).split(' ')
 
